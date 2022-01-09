@@ -29,8 +29,8 @@ class Stack:
             if i in brackets.values():
                 s.push(i)
                 count += 1
-            elif i in brackets:
-                if s.isEmpty :
+            elif i in brackets :
+                if count == 0 :
                     print('Несбалансировано')
                     break
                 elif brackets[i] != s.pop():
